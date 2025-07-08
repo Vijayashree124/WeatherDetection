@@ -61,4 +61,7 @@ This project was built as part of my full-stack web development training at Tap 
 🌙 Weather-based theme modes (light/rainy/night)
 
 📷 Website Preview:
-(Insert screenshot or live link if available)
+
+![image alt](https://github.com/Vijayashree124/WeatherDetection/blob/58157022954a9f54d27ba2669c3e2e6ef36420e2/Preview/Screenshot%202025-07-08%20131212.png)
+
+
