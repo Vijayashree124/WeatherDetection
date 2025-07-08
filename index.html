@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Detection</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.cdnfonts.com/css/tree-ghost" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/butlermations-crazy" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/groovy-cartoon-expanded-round" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/nevermind-semi-serif" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/belanosima" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 antialiased" >
+  
+
+    <div class="flip-card card-default-bg">
+        <!-- Dark/Light Mode Toggle Button -->
+        <button id="darkModeToggle" class="focus:outline-none">
+            <span class="icon-container">
+                <i class="fas fa-moon moon-icon"></i>
+                <i class="fas fa-sun sun-icon"></i>
+            </span>
+        </button>
+
+        <div id="flipCardInner" class="flip-card-inner">
+            <!-- Front of the card -->
+            <div class="flip-card-front relative flex flex-col items-center justify-center space-y-6">
+                 <h1 class="text-6xl font-extrabold text-white shadow-lg-black">Weather World</h1>
+                <p class="text-lg text-white drop-shadow-md" style="font-family: 'NeverMind semi-serif', sans-serif;">Discover the forecast!</p>
+                <input type="text" id="cityInput" placeholder="Enter city name" style="font-family:'Belanosima', sans-serif;"
+                       class="input-field w-full max-w-xs text-center text-lg focus:ring-black-500 focus:border-black-500" >
+                <button id="searchButton" class="btn-primary flex items-center justify-center gap-2" style="font-family:'Belanosima', sans-serif;" >
+                    <i class="fas fa-search"></i> Get Weather
+                </button>
+            </div>
+
+            <!-- Back of the card -->
+            <div id="weatherBack" class="flip-card-back relative flex flex-col items-center p-6" style="font-family: 'NeverMind semi-serif', sans-serif;" >
+             
+                <div id="backContentWrapper" class="w-full h-full flex flex-col items-center">
+                    <div class="flex flex-col items-center gap-2 mb-4">
+                        <h2 id="locationName" class="text-5xl font-extrabold" style="font-family: 'Groovy Cartoon', sans-serif; letter-spacing: 0.1cap;"></h2>
+                        <div id="weatherIcon" class="text-6xl"></div>
+                        <p id="temperature" class="text-5xl font-extrabold"></p>
+                        <p id="description" class="text-xl capitalize"></p>
+                    </div>
+
+                    <div id="details" class="flex justify-around w-full mt-2 text-center">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-water text-2xl mb-1"></i>
+                            <span id="humidity" class="text-lg font-semibold"></span>
+                            <span class="text-sm">Humidity</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-wind text-2xl mb-1"></i>
+                            <span id="windSpeed" class="text-lg font-semibold"></span>
+                            <span class="text-sm">Wind</span>
+                        </div>
+                    </div>
+
+                    <!-- Temperature Unit Toggle -->
+                    <div class="unit-toggle mt-4">
+                        <button id="celsiusBtn" class="active">°C</button>
+                        <button id="fahrenheitBtn">°F</button>
+                    </div>
+
+                    <!-- Forecast -->
+                    <div id="forecast-container" class="mt-4">
+                    
+                    </div>
+
+                    <!-- Fun Fact Display -->
+                    <p id="funFact" class="text-sm mt-4 text-center italic opacity-80" style="font-family: 'Butlermations Crazy', sans-serif;"></p>
+
+                    <!-- Back Button - NOW ONLY HERE -->
+                    <button id="backButton" class="btn-primary mt-6">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading and Error Messages -->
+    <div id="messageBox" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full shadow-lg hidden z-50 transition-all duration-300 ease-in-out">
+        <p id="errorMessage"></p>
+    </div>
+    <div id="loadingSpinner" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-40 hidden flex-col">
+        <div class="spinner"></div>
+        <span id="loadingMessage" class="text-white mt-4 text-lg">Fetching weather...</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
