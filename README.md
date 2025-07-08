@@ -64,4 +64,6 @@ This project was built as part of my full-stack web development training at Tap 
 
 ![image alt](https://github.com/Vijayashree124/WeatherDetection/blob/58157022954a9f54d27ba2669c3e2e6ef36420e2/Preview/Screenshot%202025-07-08%20131212.png)
 
+![image alt](https://github.com/Vijayashree124/WeatherDetection/blob/1d92b6d95f1dbc288c626698f3e87c849e13a7c9/Preview/Screenshot%202025-07-08%20131323.png)
+
 
