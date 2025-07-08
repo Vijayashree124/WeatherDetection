@@ -1,5 +1,5 @@
 🌤️ WeatherWorld – A Live Weather Detection Website
-WeatherWorld is a clean, user-friendly weather detection website that shows real-time weather information for any city using the OpenWeatherMap API.The website features a sleek UI with smooth flip card animations to present weather information in a visually appealing and dynamic way.
+WeatherWorld is a clean, user-friendly weather detection website that shows real-time weather information for any city using the OpenWeatherMap API.The website features a sleek UI with smooth flip card animations to present weather information in a visually appealing and dynamic way.A dark/light theme toggle, and even fun weather facts to make the user experience both useful and delightful.
 The website allows users to quickly search for any city and receive live updates on temperature, humidity, wind speed, and weather status—all in a simple, responsive layout.
 
 🌟 Website Features :
@@ -9,6 +9,8 @@ The website allows users to quickly search for any city and receive live updates
 🌡️ Live Weather Info – View real-time temperature, humidity, wind speed, and condition
 
 💫 Smooth Flip Animation – Weather info is displayed using card-flip effects for modern UI fee
+
+🎈 Fun Weather Facts – Displays interesting weather-related facts to engage users
 
 🎨 Dynamic Icons – Visuals update automatically based on live weather
 
@@ -51,6 +53,20 @@ That’s it! Start typing a city and explore the weather instantly.
 🎓 Project Background:
 
 This project was built as part of my full-stack web development training at Tap Academy, Bangalore. It helped me understand the core concepts of front-end design, JavaScript event handling, and working with real-time web APIs. It also strengthened my ability to build functional and responsive websites from scratch.
+
+🧠 What I Learned:
+
+Integrating RESTful APIs with front-end websites
+
+Managing asynchronous operations using fetch()
+
+Creating smooth animations and transitions using CSS
+
+Implementing theme toggles with JavaScript and localStorage
+
+Enhancing UX with engaging content and visuals
+
+
 
 🌱 Future Enhancements:
 
